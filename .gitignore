@@ -1,3 +1,11 @@
+# Site-specific
+.sass-cache
+palette.scss
+watch-scss.cmd
+css
+
+# ----  Node  ----
+
 # Logs
 logs
 *.log

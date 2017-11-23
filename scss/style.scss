@@ -1,0 +1,103 @@
+$color-primary: #4E5B69;
+$color-text: #C1DFF0;
+//$color3: rgba(136, 204, 241, 1); // 88ccf1-
+//$color4: rgba(53, 135, 164, 1); // 3587a4
+$color-accent: #eb6534;
+$max-w: 260px;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $color-primary;
+}
+
+.welcome {
+  margin: 0 auto;        // Center box
+  margin-top: 70px;
+  padding: 0 15px;
+  font-size: 20px;
+  color: $color-text;
+  font-family: "Ubintu Mono", monospace;
+  max-width: $max-w;
+}
+#hey {
+  cursor: pointer;
+  transition: color 200ms;
+}
+#hey:hover {
+  color: lighten($color-accent, 10%);
+}
+.color-accent {
+  color: $color-accent;
+}
+
+footer {
+  max-width: $max-w;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: center;
+}
+.social-link {
+  display: inline-block;
+  padding: 6px 2px;
+  margin: 0 8px;
+  border-radius: 50%;
+  color: lighten($color-primary, 15%);
+  transition: color 200ms;
+}
+.social-link:hover {
+  color: lighten($color-primary, 40%);
+}
+
+.fa-github {
+  font-size: 2.2em !important;
+}
+
+
+/***********************
+        SPINNER
+***********************/
+
+
+#outside {
+  width: 40px;
+  height: 40px;
+  border: dashed 10px $color-text;
+  margin: 0 auto;
+  margin-top: 90px;
+
+  animation-name: spinner-one;
+  animation-duration: 2.7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinner-one {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(45deg); }
+  50% { transform: scale(0.6) rotate(90deg); }
+  75% { transform: scale(1.2) rotate(270deg); }
+  100% { transform: scale(1) rotate(360deg); }
+}
+
+#inside {
+  background-color: $color-text;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+
+  animation-name: spinner-two;
+  animation-duration: 2.7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinner-two {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(45deg); }
+  50% { border-radius: 50%; transform: scale(3) rotate(90deg); }
+  75% { transform: scale(1.2) rotate(270deg); }
+  100% { border-radius: none; transform: scale(1) rotate(360deg); }
+}
