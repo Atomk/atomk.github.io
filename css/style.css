@@ -1,0 +1,95 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #4E5B69; }
+
+.welcome {
+  margin: 0 auto;
+  margin-top: 70px;
+  padding: 0 15px;
+  font-size: 20px;
+  color: #C1DFF0;
+  font-family: "Ubintu Mono", monospace;
+  max-width: 260px; }
+
+#hey {
+  cursor: pointer;
+  transition: color 200ms; }
+
+#hey:hover {
+  color: #f08862; }
+
+.color-accent {
+  color: #eb6534; }
+
+footer {
+  max-width: 260px;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: center; }
+
+.social-link {
+  display: inline-block;
+  padding: 6px 2px;
+  margin: 0 8px;
+  border-radius: 50%;
+  color: #6f8194;
+  transition: color 200ms; }
+
+.social-link:hover {
+  color: #b8c1cb; }
+
+.fa-github {
+  font-size: 2.2em !important; }
+
+/***********************
+        SPINNER
+***********************/
+#outside {
+  width: 40px;
+  height: 40px;
+  border: dashed 10px #C1DFF0;
+  margin: 0 auto;
+  margin-top: 90px;
+  animation-name: spinner-one;
+  animation-duration: 2.7s;
+  animation-iteration-count: infinite; }
+
+@keyframes spinner-one {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(45deg); }
+  50% {
+    transform: scale(0.6) rotate(90deg); }
+  75% {
+    transform: scale(1.2) rotate(270deg); }
+  100% {
+    transform: scale(1) rotate(360deg); } }
+#inside {
+  background-color: #C1DFF0;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+  animation-name: spinner-two;
+  animation-duration: 2.7s;
+  animation-iteration-count: infinite; }
+
+@keyframes spinner-two {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(45deg); }
+  50% {
+    border-radius: 50%;
+    transform: scale(3) rotate(90deg); }
+  75% {
+    transform: scale(1.2) rotate(270deg); }
+  100% {
+    border-radius: none;
+    transform: scale(1) rotate(360deg); } }
+
+/*# sourceMappingURL=style.css.map */

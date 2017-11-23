@@ -2,7 +2,7 @@
 .sass-cache
 palette.scss
 watch-scss.cmd
-css
+css/*.map
 
 # ----  Node  ----
 
