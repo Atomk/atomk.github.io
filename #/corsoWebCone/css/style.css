@@ -1,0 +1,176 @@
+body {
+  background-color: #eee;
+  /* Fallback color */
+  background-image: url("../img/pattern.jpg");
+  /* Image source: http://youandsaturation.com/wp-content/uploads/2012/12/patterns04.jpg*/
+}
+
+.container-fluid {
+  margin: 40px;
+  padding: 40px;
+  border: 0.5em solid #f36a36;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: -0.3pt;
+}
+
+header {
+  background-image: url("../img/banner.png");
+  background-size: 100% 100%;
+  /* Immagine senza ombra */
+  padding: 2px 40px 50px 40px;
+  margin-bottom: 45px;
+  max-width: 600px;
+  color: #fff;
+}
+
+header h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #222;
+}
+
+#descrizione h3, li, p {
+    font-size: 24px;
+  }
+
+#descrizione {
+  margin-top: 80px;
+}
+
+#main {
+  font-size: 20px;
+}
+
+.section-title {
+  margin-top: 80px;
+  margin-bottom: 45px;
+}
+
+.orange-back {
+  background-color: #f36a36;
+  color: white;
+  padding: 0.3em 0.4em;
+}
+
+.thumbnail {
+  /* Evita che la larghezza della thumbnail diventi maggiore di quella dell'immagine */
+  max-width: 500px;
+  padding: 10px;
+}
+
+.caption p {
+  font-size: 16px;
+}
+
+.esplicacion {
+  height: 0;
+  opacity: 0;
+  transition: height 200ms;
+  overflow: hidden;
+}
+
+#main ul li:hover .esplicacion {
+  height: 100px;
+  opacity: 1;
+}
+
+
+/******************************************
+                  FOOTER
+******************************************/
+#footer {
+  background-color: #f36a36;
+  color: white;
+  font-size: 20px;
+  margin: -2.3em;
+  margin-top: 80px;
+  padding: 1em 1.5em;
+}
+
+#footer a,
+#footer a:hover,
+#footer a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/******************************************
+              MEDIA QUERIES
+******************************************/
+/* Boostrap "mobile" breakpoint */
+@media (max-width: 767px) {
+  .container-fluid {
+    border: none;
+    margin: 25px;
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  #descrizione h3, li, p {
+    font-size: 18px;
+  }
+
+  #footer {
+    margin: -25px;
+    margin-top: 80px;
+  }
+
+  header {
+    margin-bottom: 25px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 557px) {
+  header {
+    /* Evita che il titolo sia troppo vicino ai bordi del banner arancione su schermi piccoli */
+  }
+}
+@media (max-width: 477px) {
+  /*.container-fluid {
+    margin: 20px;
+    margin-top: 40px;
+  }*/
+  .section-title {
+    font-size: 26px;
+  }
+
+  header {
+    background-color: #f36a36;
+    background-image: none;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 2px 2px 8px #555;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+}
+@media (min-width: 1280px) {
+  div.container-fluid {
+    text-align: center;
+  }
+
+  .caption {
+    text-align: left;
+  }
+
+  div#main ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  div#main li {
+    border: 1px solid #bbb;
+    margin: 10px 0;
+    padding: 0 40px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+}
